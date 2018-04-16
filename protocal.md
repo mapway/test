@@ -13,10 +13,19 @@
 
 |索引|指令名称|二进制数值|描述|
 |---|---|---|--|
-|1|DEVICE_INFO_QUERY|0x0001	查询设备制造商信息|
+|1|DEVICE_INFO_QUERY|0x0001|查询设备制造商信息|
 |2|DEVICE_INFO_REPORT|0x0002|设备报告自己的信息|
 |3|DEVICE_CONTROL|0x0003|设备控制指令|
 |4|DEVICE_CONTROL_RESPONSE|0x0004|控制响应指令|
 |5|DEVICE_STATE_NOTIFY|0x0005|设备状态发生变化通知消息|
+
+## 设备制造商查询指令
+
+```json
+  //网关向设备发送查询设备制造商信息
+  {
+    "type":"DEVICE_INFO_QUERY"
+  }
+```
 
 
